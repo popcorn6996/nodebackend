@@ -7,6 +7,11 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 
+
+app.get('/', (req, res) => {
+    res.status(2--).json({message: 'Working live'})
+})
+
 app.post('/testKeyboard', (req, res) => {
     const keyboardKeys = "abcdefghijklmnopqrstuvwxyz1234567890.,/;]";
 
